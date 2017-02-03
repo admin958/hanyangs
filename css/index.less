@@ -1,0 +1,636 @@
+.nav, .main, .news, .partner, .product_list, .product_ma, .footer, .about, .contactMe, .commodity, .commodityPro {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@fontsize1: 18px;
+@fontsize2: 14px;
+@fontsize3: 22px;
+@fontsize4: 16px;
+/*************************首页*************************************/
+.nav {
+    overflow: hidden;
+    & > a {
+        display: inline-block;
+        img {
+            float: left;
+            line-height: 110px;
+            padding-top: 10px;
+        }
+    }
+    ul {
+        float: right;
+        li {
+            position: relative;
+            float: left;
+            height: 110px;
+            width: 120px;
+            padding-top: 30px;
+            & > a {
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                line-height: 50px;
+                width: 120px;
+                text-align: center;
+                font-size: @fontsize1;
+                font-weight: bold;
+                z-index: 100;
+                &:hover {
+                    color: #369739;
+                }
+            }
+            &.active {
+                a {
+                    color: #369739;
+                }
+            }
+        }
+        .nav_last_li {
+            width: 100px;
+            padding-top: 15px;
+            select {
+                border: none;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                margin: 25px;
+                padding: 5px 10px;
+                padding-right: 30px;
+                background: #eeeeee url("../images/select_03.png") no-repeat 90% center;
+
+            }
+
+        }
+    }
+}
+
+.footer {
+    p {
+        line-height: 85px;
+        text-align: center;
+        font-size: @fontsize1;
+        span {
+            margin-right: 15px;
+            color: #373737;
+        }
+    }
+}
+
+.foot {
+    background: #369739;
+    p span {
+        color: #ffffff;
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 790px;
+    overflow: hidden;
+    & > p {
+        position: absolute;
+        bottom: 15px;
+        left: 45%;
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 10px;
+            border-radius: 2px;
+            margin: 0 5px;
+            border: 1px solid #eeeeee;
+            box-shadow: 0 0 3px #fff404;
+            &:hover {
+                background: #23ac38;
+            }
+        }
+        a.active {
+            background: #23ac38;
+        }
+    }
+    .bannerImg {
+        position: absolute;
+        top: 0;
+        width: 600%;
+    }
+    .bannerImg > li {
+        float: left;
+        position: relative;
+        width: 100%/6;
+        & > a {
+            display: block;
+            img {
+
+                width: 100%;
+                min-width: 1200px;
+                height: 790px;
+            }
+        }
+        & > div {
+            position: absolute;
+            width: 100%;
+            top: 140px;
+            p {
+                width: 1200px;
+                margin: 0 auto;
+                padding-left: 400px;
+                padding-right: 200px;
+                font-size: 16px;
+                color: #b1bec7;
+            }
+            & > p:nth-child(1) {
+                font-size: 55px;
+                color: #369739;
+                font-weight: bold;
+                text-shadow: 5px 2px 6px #fff;
+            }
+            & > p:nth-child(2) {
+                font-size: 55px;
+                color: #004cd6;
+                font-weight: bold;
+                text-shadow: 5px 2px 6px #fff;
+            }
+        }
+    }
+
+}
+
+.imgPro {
+    img {
+        width: 100%;
+        min-width: 1200px;
+    }
+}
+
+/*************************关于我们***********************************/
+.backgroundLinear {
+    background: -moz-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -webkit-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -o-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -ms-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+}
+
+.topP {
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: -moz-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -webkit-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -o-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: -ms-linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    background: linear-gradient(bottom, #eff4f5 0%, #d8dde3 50%, #f1f5f6 51%, #f1f5f6 100%);
+    a {
+        font-size: @fontsize1;
+        color: #369739;
+    }
+    a:nth-child(2) {
+        float: right;
+    }
+}
+
+.about {
+    margin: 45px auto 80px;
+    border: 1px solid #898989;
+    .aboutContent {
+        margin: 0px 60px;
+        li {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        li.p1 {
+            margin: 35px 0 25px;
+            font-size: @fontsize2;
+            line-height: 25px;
+        }
+    }
+
+}
+
+/*************************关于我们***********************************/
+.contactMe {
+    margin: 45px auto 80px;
+    border: 1px solid #898989;
+    & > h3 {
+        border-left: 5px solid #369739;
+        font-size: @fontsize3;
+        margin: 40px 0 20px;
+        margin-left: 10px;
+        padding-left: 5px;
+        font-weight: normal;
+    }
+    p.pH3 {
+        line-height: 30px;
+        font-size: @fontsize4;
+    }
+    .contactMol {
+        margin: 0 185px;
+        margin-top: 40px;
+        & > p {
+            line-height: 85px;
+            border: 1px solid #eeeeee;
+            border-radius: 3px;
+            padding-left: 50px;
+            overflow: hidden;
+            span {
+                float: left;
+                font-size: @fontsize4;
+                img {
+                    vertical-align: middle;
+                }
+            }
+            span.span1 {
+                font-size: 40px;
+                font-weight: bold;
+                color: #9a1017;
+                margin-right: 20px;
+                margin-left: 5px;
+            }
+            span.span2 {
+                color: #9a1017;
+                font-weight: bold;
+            }
+        }
+        .contactMolContent {
+            margin: 20px 50px;
+            font-size: @fontsize4;
+            p {
+                font-size: @fontsize4;
+                line-height: 30px;
+            }
+            .contactMolContentInput {
+                margin-top: 45px;
+                p.p1 {
+                    overflow: hidden;
+                    input {
+                        float: left;
+                        line-height: 50px;
+                        font-size: @fontsize4;
+                        padding: 0 15px;
+                        width: 49%;
+                        border: 1px solid #898989;
+                        color: #898989;
+                    }
+                    input:nth-child(1) {
+                        margin-right: 2%;
+                    }
+                }
+                p.p2 {
+                    margin: 20px 0;
+                    textarea {
+                        width: 100%;
+                        min-height: 180px;
+                        border: 1px solid #898989;
+                        padding: 0 15px;
+                        font-size: @fontsize4;
+                        line-height: 30px;
+                        color: #898989;
+                        resize: none;
+                    }
+                }
+                & > a {
+                    display: block;
+                    width: 85px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: #9a1017;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    &:hover {
+                        -webkit-box-shadow: 0 0 10px #dd9572;
+                        -moz-box-shadow: 0 0 10px #dd9572;
+                        -o-box-shadow: 0 0 10px #dd9572;
+                        box-shadow: 0 0 10px #dd9572;
+                    }
+                }
+            }
+        }
+    }
+    .contactMap {
+        width: 100%;
+        height: 475px;
+        margin-top: 50px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/*************************产品中心***********************************/
+.commodityLf {
+    margin-right: 20px;
+    width: 225px;
+    .commodityLfTop {
+        border: 1px solid #898989;
+        border-radius: 3px;
+        p {
+            border-bottom: 1px solid #898989;
+            font-size: @fontsize1;
+            color: #369739;
+            line-height: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        ul {
+            li {
+                border-bottom: 1px solid #898989;
+                padding-left: 15px;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                a {
+                    display: block;
+                    line-height: 40px;
+                    padding-left: 25px;
+                    background: url(../images/commodity_08.png) no-repeat 0px center;
+                    color: #898989;
+                    font-size: @fontsize4;
+                }
+            }
+            li:last-child {
+                border-bottom: 1px solid transparent;
+            }
+            li.active {
+                padding-left: 30px;
+                background: #e6e6e6;
+                a {
+                    color: #1d1d1d;
+                }
+            }
+            li:hover {
+                padding-left: 30px;
+                background: #e6e6e6;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                a {
+                    color: #1d1d1d;
+                }
+            }
+        }
+    }
+    .commodityLfBot {
+        margin-top: 20px;
+        border: 1px solid #898989;
+        border-radius: 3px;
+        h1 {
+            border-bottom: 1px solid #898989;
+            font-size: @fontsize1;
+            color: #369739;
+            line-height: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        p {
+            line-height: 30px;
+            padding-left: 15px;
+            font-size: @fontsize4;
+        }
+    }
+}
+
+.commodity {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    .commodityRt {
+        overflow: hidden;
+        border: 1px solid #898989;
+        border-radius: 3px;
+        & > p {
+            font-size: @fontsize1;
+            color: #369739;
+            line-height: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        ul {
+            padding: 10px;
+            li {
+                border-bottom: 1px dotted #898989;
+                overflow: hidden;
+                padding: 25px 20px 10px 20px;
+                .commodityRtImg {
+                    float: left;
+                    width: 170px;/*修改*/
+                    height: 170px;/*修改*/
+                    position: relative;
+                    &>img{/*修改*/
+                        width: 100%;
+                    }
+                    .img1 {
+                        position: absolute;
+                        width: 90px;/*修改*/
+                        height: 120px;/*修改*/
+                        line-height: 120px;/*修改*/
+                        top: 20px;/*修改*/
+                        left: 30px;/*修改*/
+                        img {
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .commodityRtContent {
+                    overflow: hidden;
+                    padding-left: 60px;
+                    h1 {
+                        line-height: 40px;
+                        font-size: @fontsize1;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        line-height: 25px;
+                        font-size: @fontsize4;
+                    }
+                    a {
+                        display: inline-block;
+                        width: 375px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 5px;
+                        font-size: @fontsize4;
+                        background: #e6e6e6;
+                        margin-top: 40px;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                        transition: all 0.3s;
+                        &:hover {
+                            background: #88c50e;
+                            color: #ffffff;
+                            -webkit-transition: all 0.3s;
+                            -moz-transition: all 0.3s;
+                            -o-transition: all 0.3s;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+            li:last-child {
+                border-bottom: 1px dotted transparent;
+            }
+        }
+        .fenye {
+            text-align: center;
+            margin: 0 0 10px;
+            a {
+                font-size: 14px;
+                font-weight: normal;
+                display: inline-block;
+                border: 1px solid #d2d4d9;
+                line-height: 25px;
+                padding: 0 8px;
+                margin: 0 3px;
+                &.active{
+                    background: #369739;
+                    color: #ffffff;
+                }
+                &:hover{
+                    background: #369739;
+                    color: #ffffff;
+                }
+            }
+
+
+        }
+    }
+}
+
+/*************************产品详情***********************************/
+.commodityPro {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    .commodityProRt {
+        overflow: hidden;
+        border: 1px solid #898989;
+        border-radius: 3px;
+        & > div {
+            padding: 20px;
+            .productIntroduction {
+                overflow: hidden;
+                & > .con-FangDa {
+                    float: left;
+                    width: 350px;
+                    height: 350px;
+                    padding-left: 0;
+                    background: url(../images/commodity_05.png) no-repeat center center;
+                    .con-fangDaIMg {
+                        width: 60%;
+                        height: 250px;
+                        line-height: 250px;
+                        position: relative; //这里使用相对定位，好让其他的元素能依靠这个元素定位
+                        margin-left: 50px;
+                        margin-top: 30px;
+                        & > img {
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                        .magnifyingBegin {
+                            background-color: #454545;
+                            opacity: 0.5;
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            display: none; //先让他隐藏，用js使其显示
+                        }
+                        .magnifyingShow {
+                            width: 340px;
+                            height: 340px;
+                            overflow: hidden;
+                            position: absolute;
+                            background: #f1f5f6;
+                            border: 1px solid #d2d4d9;
+                            top: -20px;
+                            left: 300px;
+                            display: none; //先让他隐藏，用js使其显示
+                            img {
+                                width: 600px;
+                                height: 600px;
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                            }
+                        }
+                    }
+                }
+                & > div {
+                    padding-left: 60px;
+                    width: 560px;
+                    float: left;
+                    h4 {
+                        line-height: 40px;
+                        border-bottom: 1px dotted #898989;
+                        font-size: @fontsize1;
+                        color: #369739;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        line-height: 26px;
+                        font-size: @fontsize4;
+                    }
+                }
+            }
+            .productAttributes {
+                margin-top: 55px;
+                h1 {
+                    border-bottom: 1px solid #898989;
+                    margin-bottom: 30px;
+                    span {
+                        display: inline-block;
+                        background: #88c50e;
+                        border-radius: 5px;
+                        width: 230px;
+                        height: 38px;
+                        line-height: 38px;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: @fontsize1;
+                    }
+                }
+                table {
+                    width: 100%;
+                    border: 1px solid #898989;
+                    tr {
+                        td {
+                            line-height: 40px;
+                            font-size: @fontsize4;
+                            border-bottom: 1px solid #898989;
+                            padding-left: 45px;
+                        }
+                        td:first-child {
+                            width: 35%;
+                            border-right: 1px solid #898989;
+                            background: #dae2ed;
+                            padding-left: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                    tr:last-child {
+                        td {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                p {
+                    margin-top: 25px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

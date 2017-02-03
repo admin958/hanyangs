@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海汉阳生物科技有限公司</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="nav">
+    <a href="index.html"><img src="images/img_03.png" alt=""/></a>
+    <ul>
+        <li class="active">
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="commodity.html">产品</a>
+        </li>
+        <li>
+            <a href="about.html">关于我们</a>
+        </li>
+        <li>
+            <a href="contact.html">联系我们</a>
+        </li>
+        <li class="nav_last_li">
+            <select name="" id="">
+                <option value="1"><a href="javascript:;">语言</a></option>
+                <option value="1"><a href="javascript:;">中文</a></option>
+                <option value="1"><a href="javascript:;">英文</a></option>
+            </select>
+        </li>
+    </ul>
+</div>
+<div class="banner">
+    <ul class="bannerImg">
+        <li class="bannerImg01">
+            <a href="javascript:;"><img src="images/banner_01.png" alt="banner"/></a>
+
+            <div>
+                <p class="wow fadeInLeft p1">致力于</p>
+
+                <p class="wow fadeInRight p2">人类健康服务事业</p>
+
+                <p>Committed to the cause of human health services</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolorum error eum explicabo
+                    facere id, illum ipsa itaque iure magnam magni odit officia quaerat quod recusandae sunt, tenetur
+                    veniam.</p>
+            </div>
+        </li>
+        <li class="bannerImg02">
+            <a href="javascript:;"><img src="images/banner_02.png" alt="banner"/></a>
+
+            <div>
+                <p class="wow fadeInLeft p1">致力于</p>
+
+                <p class="wow fadeInRight p2">人类健康服务事业</p>
+
+                <p>Committed to the cause of human health services</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolorum error eum explicabo
+                    facere id, illum ipsa itaque iure magnam magni odit officia quaerat quod recusandae sunt, tenetur
+                    veniam.</p>
+            </div>
+        </li>
+        <li class="bannerImg03">
+            <a href="javascript:;"><img src="images/banner_03.png" alt="banner"/></a>
+
+            <div>
+                <p class="wow fadeInLeft p1">致力于</p>
+
+                <p class="wow fadeInRight p2">人类健康服务事业</p>
+
+                <p>Committed to the cause of human health services</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolorum error eum explicabo
+                    facere id, illum ipsa itaque iure magnam magni odit officia quaerat quod recusandae sunt, tenetur
+                    veniam.</p>
+            </div>
+        </li>
+    </ul>
+    <p class="bannerP">
+        <a class="active" href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </p>
+</div>
+
+<div class="footer">
+    <p>
+        <span>电话：400-000-0000</span>
+        <span>邮箱：2862259942@.com</span>
+        <span>地址：上海市青浦区华腾路1288号1幢3层D区326室</span>
+    </p>
+</div>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+
+    var width = $(".banner").width();
+    var i = -1;
+    var timer = 0;
+    $(document).ready(function () {
+        move();
+        timer = setInterval("move()", 4000);
+        $(".bannerImg").hover(function () {
+            clearInterval(timer);
+        }, function () {
+            timer = setInterval("move()", 4000);
+        })
+        $('.banner p a').click(function () {
+            var ddIndex = $(this).index() - 1;
+            i = ddIndex;
+            move();
+        })
+    });
+    var move = function () {
+        i++;
+        if (i >= 3) {
+            i = 0;
+        }
+        if (i < 3) {
+            if (i == 0) {
+                $('.banner p a').eq(i).addClass('active').siblings().removeClass('active');
+                $('.banner ul li').eq(i).fadeIn(100).siblings().fadeOut();
+
+            }
+            if (i == 1) {
+                $('.banner p a').eq(i).addClass('active').siblings().removeClass('active');
+                $('.banner ul li').eq(i).fadeIn(100).siblings().fadeOut();
+
+            }
+            if (i == 2) {
+                $('.banner p a').eq(i).addClass('active').siblings().removeClass('active');
+                $('.banner ul li').eq(i).fadeIn(100).siblings().fadeOut();
+            }
+        }
+    }
+</script>
+</body>
+</html>

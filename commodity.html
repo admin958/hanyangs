@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="nav">
+    <a href="index.html"><img src="images/img_03.png" alt=""/></a>
+    <ul>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li class="active">
+            <a href="commodity.html">产品</a>
+        </li>
+        <li>
+            <a href="about.html">关于我们</a>
+        </li>
+        <li>
+            <a href="contact.html">联系我们</a>
+        </li>
+        <li class="nav_last_li">
+            <select name="" id="">
+                <option value="1"><a href="javascript:;">语言</a></option>
+                <option value="1"><a href="javascript:;">中文</a></option>
+                <option value="1"><a href="javascript:;">英文</a></option>
+            </select>
+        </li>
+    </ul>
+</div>
+<div class="imgPro"><img src="images/contact_02.png" alt=""/></div>
+<div class="commodity">
+    <div class="commodityLf lf">
+        <div class="commodityLfTop">
+            <p class="backgroundLinear">产品分类</p>
+            <ul id="proList">
+                <li><a href="javascript:;">紫外灯用粘虫板</a></li>
+                <li class="active"><a href="javascript:;">粘鼠板</a></li>
+                <li><a href="javascript:;">蟑螂板</a></li>
+                <li><a href="javascript:;">粘蛾板</a></li>
+                <li><a href="javascript:;">黄板</a></li>
+                <li><a href="javascript:;">树胶</a></li>
+            </ul>
+        </div>
+        <div class="commodityLfBot">
+            <h1 class="backgroundLinear">联系我们</h1>
+            <p>电话：400-000-0000</p>
+            <p>传真：400-000-0000</p>
+            <p>邮箱：12345678@qq.com</p>
+            <p>地址：上海市徐汇区凯旋路3021号</p>
+        </div>
+    </div>
+    <div class="commodityRt">
+        <p class="backgroundLinear">产品中心</p>
+        <ul>
+            <li>
+                <div class="commodityRtImg">
+                    <img src="images/commodity_05.png" alt=""/>
+                    <div class="img1">
+                        <img src="images/1_03.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="commodityRtContent">
+                    <h1>专业粘鼠板</h1>
+                    <p>专业粘鼠板的产品描述：</p>
+                    <p>作为新一代环保产品，我们的产品不受天气变化，可重复使用，无毒，无害和环保... </p>
+                    <a href="commodity_pro.html">详细信息>></a>
+                </div>
+            </li>
+            <li>
+                <div class="commodityRtImg">
+                    <img src="images/commodity_05.png" alt=""/>
+                    <div class="img1">
+                        <img src="images/1_07.png" alt=""/>
+                    </div>
+                </div>
+                <div class="commodityRtContent">
+                    <h1>专业粘鼠板</h1>
+                    <p>专业粘鼠板的产品描述：</p>
+                    <p>作为新一代环保产品，我们的产品不受天气变化，可重复使用，无毒，无害和环保... ...</p>
+                    <a href="commodity_pro.html">详细信息>></a>
+                </div>
+            </li>
+            <li>
+                <div class="commodityRtImg">
+                    <img src="images/commodity_05.png" alt=""/>
+                    <div class="img1">
+                        <img src="images/1_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="commodityRtContent">
+                    <h1>专业粘鼠板</h1>
+                    <p>专业粘鼠板的产品描述：</p>
+                    <p>作为新一代环保产品，我们的产品不受天气变化，可重复使用，无毒，无害和环保... ...</p>
+                    <a href="commodity_pro.html">详细信息>></a>
+                </div>
+            </li>
+            <li>
+                <div class="commodityRtImg">
+                    <img src="images/commodity_05.png" alt=""/>
+                    <div class="img1">
+                        <img src="images/1_14.png" alt=""/>
+                    </div>
+                </div>
+                <div class="commodityRtContent">
+                    <h1>专业粘鼠板</h1>
+                    <p>专业粘鼠板的产品描述：</p>
+                    <p>作为新一代环保产品，我们的产品不受天气变化，可重复使用，无毒，无害和环保... ...</p>
+                    <a href="commodity_pro.html">详细信息>></a>
+                </div>
+            </li>
+        </ul>
+        <p class="fenye">
+            <a href="javascript:;">首页</a><a class="active" href="javascript:;">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">尾页</a><a href="javascript:;">下一页</a>
+        </p>
+    </div>
+</div>
+<div class="foot">
+    <div class="footer">
+        <p>
+            <span>电话：400-000-0000</span>
+            <span>邮箱：2862259942@.com</span>
+            <span>地址：上海市青浦区华腾路1288号1幢3层D区326室</span>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+    (function () {
+        $("#proList li").click(function () {
+            $("#proList li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+        })
+    })();
+
+</script>
+</body>
+</html>

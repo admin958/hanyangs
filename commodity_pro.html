@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="nav">
+    <a href="index.html"><img src="images/img_03.png" alt=""/></a>
+    <ul>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li class="active">
+            <a href="commodity.html">产品</a>
+        </li>
+        <li>
+            <a href="about.html">关于我们</a>
+        </li>
+        <li>
+            <a href="contact.html">联系我们</a>
+        </li>
+        <li class="nav_last_li">
+            <select name="" id="">
+                <option value="1"><a href="javascript:;">语言</a></option>
+                <option value="1"><a href="javascript:;">中文</a></option>
+                <option value="1"><a href="javascript:;">英文</a></option>
+            </select>
+        </li>
+    </ul>
+</div>
+<div class="imgPro"><img src="images/contact_02.png" alt=""/></div>
+<div class="commodityPro">
+    <div class="commodityLf lf">
+        <div class="commodityLfTop">
+            <p class="backgroundLinear">产品分类</p>
+            <ul id="proList">
+                <li><a href="javascript:;">紫外灯用粘虫板</a></li>
+                <li class="active"><a href="javascript:;">粘鼠板</a></li>
+                <li><a href="javascript:;">蟑螂板</a></li>
+                <li><a href="javascript:;">粘蛾板</a></li>
+                <li><a href="javascript:;">黄板</a></li>
+                <li><a href="javascript:;">树胶</a></li>
+            </ul>
+        </div>
+        <div class="commodityLfBot">
+            <h1 class="backgroundLinear">联系我们</h1>
+
+            <p>电话：400-000-0000</p>
+
+            <p>传真：400-000-0000</p>
+
+            <p>邮箱：12345678@qq.com</p>
+
+            <p>地址：上海市徐汇区凯旋路3021号</p>
+        </div>
+    </div>
+    <div class="commodityProRt">
+        <p class="topP">
+            <a href="javascript:;">产品中心</a>
+            <a href="index.html" class="a1">返回首页</a>
+        </p>
+
+        <div class="product">
+            <div class="productIntroduction">
+                <div class="con-FangDa" id="fangdajing">
+                    <div class="con-fangDaIMg">
+                        <!-- 正常显示的图片-->
+                        <img src="images/product-02.png">
+                        <!-- 滑块-->
+                        <div class="magnifyingBegin"></div>
+                        <!-- 放大镜显示的图片 -->
+                        <div class="magnifyingShow"><img src="images/product-01.png"></div>
+                    </div>
+                </div>
+                <div class="mn">
+                    <h4>产品描述</h4>
+
+                    <p>一次性库存环保特性大鼠和鼠标胶水陷阱是非常有效的消除鼠害，大鼠和其他昆虫。作为新一代环保产品，我们的产品不受天气变化，可重复使用，无毒，无害和环保。</p>
+
+                    <p>① 超强胶，极其有效；</p>
+
+                    <p>② 无毒，无害，无农药，无臭，环保；</p>
+
+                    <p>③ 准备和易于使用，用户友好。</p>
+                </div>
+            </div>
+            <div class="productAttributes">
+                <h1><span>产品属性</span></h1>
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>产品类别：</td>
+                        <td>胶水陷阱</td>
+                    </tr>
+                    <tr>
+                        <td>材料：</td>
+                        <td>胶+纸</td>
+                    </tr>
+                    <tr>
+                        <td>板尺寸：</td>
+                        <td>板尺寸：</td>
+                    </tr>
+                    <tr>
+                        <td>包装：</td>
+                        <td>鼠胶水陷阱</td>
+                    </tr>
+                    <tr>
+                        <td>单位：</td>
+                        <td>长58.5×宽35.5×高24.5cm</td>
+                    </tr>
+                    <tr>
+                        <td>交货时间：</td>
+                        <td>14.0公斤/箱</td>
+                    </tr>
+                    <tr>
+                        <td>规格：</td>
+                        <td>30天后收到30％的定金</td>
+                    </tr>
+                </table>
+                <p><img src="images/pro_09.png" alt=""/></p>
+
+                <p><img src="images/pro_12.png" alt=""/></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="foot">
+    <div class="footer">
+        <p>
+            <span>电话：400-000-0000</span>
+            <span>邮箱：2862259942@.com</span>
+            <span>地址：上海市青浦区华腾路1288号1幢3层D区326室</span>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        new WOW().init();
+    }
+    ;
+    (function () {
+        $("#proList li").click(function () {
+            $("#proList li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+        })
+    })();
+
+
+    //放大镜效果
+    (function () {
+        $.fn.magnifying = function () {
+            var that = $(this),
+                    $imgCon = that.find('.con-fangDaIMg'),//正常图片容器
+                    $Drag = that.find('.magnifyingBegin'),//拖动滑动容器
+                    $show = that.find('.magnifyingShow'),//放大镜显示区域
+                    $showIMg = $show.find('img'),//放大镜图片
+                    multiple = $show.width() / $Drag.width();
+
+            $imgCon.mousemove(function (e) {
+                $Drag.css('display', 'block');
+                $show.css('display', 'block');
+                var iX = e.pageX - $(this).offset().left - $Drag.width() / 2,
+                        iY = e.pageY - $(this).offset().top - $Drag.height() / 2,
+                        MaxX = $imgCon.width() - $Drag.width(),
+                        MaxY = $imgCon.height() - $Drag.height();
+                iX = iX > 0 ? iX : 0;
+                iX = iX < MaxX ? iX : MaxX;
+                iY = iY > 0 ? iY : 0;
+                iY = iY < MaxY ? iY : MaxY;
+                $Drag.css({left: iX + 'px', top: iY + 'px'});
+                $showIMg.css({marginLeft: -multiple * iX + 'px', marginTop: -multiple * iY + 'px'});
+                //return false;
+            });
+            $imgCon.mouseout(function () {
+                $Drag.css('display', 'none');
+                $show.css('display', 'none');
+            });
+        }
+
+        $("#fangdajing").magnifying();
+
+
+    })();
+</script>
+</body>
+</html>
